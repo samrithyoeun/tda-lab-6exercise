@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="com.fluffy.samrith.lab6exercise.TestSharedPreferences">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ebf8ff"
+        android:id="@+id/store"
+        android:padding="16dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter the name"
+            android:id="@+id/name"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter the Email"
+            android:layout_below="@id/name"
+            android:id="@+id/email"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="STORE CONTACT"
+            android:layout_below="@id/email"
+            android:id="@+id/btnSave"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/retreive"
+        android:background="#ffebec"
+        android:layout_below="@id/store"
+        android:layout_marginTop="20dp"
+        android:padding="16dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnLoad"
+            android:text="RETRIEVE INFORMATION"/>
+
+        <TextView
+            android:layout_below="@id/btnLoad"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </RelativeLayout>
+</RelativeLayout>
