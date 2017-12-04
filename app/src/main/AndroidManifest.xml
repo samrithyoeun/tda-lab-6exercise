@@ -16,9 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TestSharedPreferences" />
-        <activity android:name=".TestIntenalStorage" />
-        <activity android:name=".TestSqlite"></activity>
+        <activity android:name=".TestSharedPreferences"
+            android:label="TestSharedPreferences"/>
+        <activity android:name=".TestIntenalStorage"
+            android:label="TestIntenalStorage"/>
+        <activity android:name=".TestSqlite"
+            android:label="TestSqlite"></activity>
     </application>
 
 </manifest>
